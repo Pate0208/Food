@@ -1,0 +1,329 @@
+body{
+    background-color: #000000;
+    margin:0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(91, 91, 91); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 222, 54); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(200, 35, 35); 
+  }
+
+/* ________________________________________________________________________ */
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header{
+    background-color: #8F1D27;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: rgb(0, 0, 0) solid 4px;
+    
+}
+
+.top_header {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.top_left_header_img{
+    width: 100px;
+    margin: 5px 0px;
+}
+
+.top_left_header{
+    display: inline-block;
+    width: 15%;
+}
+
+.top_mid_header{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+.top_mid_header_tag{
+    display: inline-block;
+    margin: 0px 20px;
+    border: #8F1D27 4px solid;
+}
+
+.top_mid_header_tag_deco{
+    text-decoration: none;
+    color: #FFF3BC;
+}
+
+.top_mid_header_tag_deco1{
+    text-decoration: none;
+    color:  #FFF3BC;
+}
+
+.top_mid_header_tag_deco1:hover{
+    border-bottom: #8F1D27 solid 4px;
+}
+
+.top_mid_header_tag:hover{
+    border-bottom: #fae500 solid 4px;
+    text-shadow: #ffffff 0px 0px 4px;
+    
+}
+
+.top_right_header_name{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 40%;
+    height: 30px;
+    padding-top:5px ;
+
+}
+
+.top_right_header {
+    height: 3.75rem;
+    margin-bottom: 3px;
+    width: 40%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot_header {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    overflow: hidden;
+    color: white;
+    border-bottom: white 3px  solid;
+}
+
+
+.bot_header_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./../IMG/hinh-anh-ho-guom-dep-voi-thap-rua.jpg);
+    animation: scroll 70s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+
+
+}
+
+@keyframes scroll {
+    100%{
+     background-position:0px 100%;
+   }
+ }
+ 
+ @media (prefers-reduced-motion) {
+   .wrapper {
+     animation: scroll 200s linear infinite;
+   }
+ }
+ 
+ @media (min-width: 670px) {
+   .title {
+     font-size: 5rem;
+   }
+ }
+
+.a11{
+    display: inline-block;
+    margin-right:5% ;
+}
+
+.text-banner {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-banner_title{
+    font-size:50px;
+    color: #fae500;
+}
+
+.text-banner_slogan{
+    font-size:20px;
+}
+
+
+/* ________________________________________________________________________ */
+
+.food_main_container{
+    height:70vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    padding: 170px 0px 100px 0px;
+}
+
+.food_image_name{
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 222, 54);
+}
+
+.food_image{
+    border-radius: 20px;
+    border: dotted black 4px;
+}
+
+.food_image_name h3{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin: 30px 0px;
+}
+
+.food_info_text{
+    font-size: 24px;
+    color: white;
+    padding: 0px 30px;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    border-top: rgb(255, 222, 54) dashed 4px;
+}
+
+
+.food_info_com{
+    font-size: 24px;
+    color: white;
+    padding: 0px 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8F1D27;
+    height:20.7vh;
+
+}
+
+/* ____________________________________________________________________ */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: rgb(255, 222, 54);
+  font-size:25px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ________________________________________________________________________ */
+
+
+footer {
+    background-color: #8f1d27;
+    color: #ffffff;
+    height: 160px;
+    border-top: rgb(255, 221, 0) 6px solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_top_text{
+    display: inline-block;
+    margin: 0px 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+    font-size: 20px;
+}
+
+.footer_bot{
+    border-top:rgb(255, 221, 0) 1px solid ;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 10px;
+}
+
+
